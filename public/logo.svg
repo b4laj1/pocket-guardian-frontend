@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7b3dbd" />
+      <stop offset="100%" stop-color="#4a2275" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main Circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#gradient)" />
+  
+  <!-- Coin Stack -->
+  <circle cx="100" cy="120" r="20" fill="#ffd700" stroke="#e6b800" stroke-width="2" />
+  <circle cx="100" cy="100" r="20" fill="#ffd700" stroke="#e6b800" stroke-width="2" />
+  <circle cx="100" cy="80" r="20" fill="#ffd700" stroke="#e6b800" stroke-width="2" />
+  
+  <!-- Dollar Sign -->
+  <text x="100" y="106" font-family="Arial" font-size="40" font-weight="bold" text-anchor="middle" fill="#5c2d91">$</text>
+  
+  <!-- Wagon Wheels -->
+  <circle cx="70" cy="140" r="10" fill="none" stroke="#ffffff" stroke-width="4" />
+  <circle cx="130" cy="140" r="10" fill="none" stroke="#ffffff" stroke-width="4" />
+  
+  <!-- Wagon Base -->
+  <path d="M65 130 L135 130 L140 140 L60 140 Z" fill="#ffffff" />
+  <path d="M70 145 L130 145 L130 150 L70 150 Z" fill="#ffffff" />
+  
+  <!-- Speed Lines -->
+  <path d="M150 70 L170 70" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+  <path d="M155 55 L175 55" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+  <path d="M150 85 L170 85" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+</svg>
