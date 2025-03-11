@@ -45,8 +45,8 @@ function App() {
       <header>
         <div className="container">
           <div className="logo-container">
-            <img src={logo} alt="WealthWagon Logo" className="logo" />
-            <h1>WealthWagon</h1>
+            <img src={logo} alt="PocketGuardian Logo" className="logo" />
+            <h1>PocketGuardian</h1>
           </div>
           <p className="tagline">Find the best deals, save more money</p>
         </div>
@@ -140,7 +140,7 @@ function App() {
                   <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                 </svg>
               </div>
-              <h2>Start saving with WealthWagon</h2>
+              <h2>Start saving with PocketGuardian</h2>
               <p>Search for any product to find the best deals across multiple stores</p>
               <div className="popular-searches">
                 <p>Popular searches:</p>
@@ -160,8 +160,8 @@ function App() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-logo">
-              <img src={logo} alt="WealthWagon Logo" className="logo" />
-              <h2>WealthWagon</h2>
+              <img src={logo} alt="PocketGuardian Logo" className="logo" />
+              <h2>PocketGuardian</h2>
             </div>
             <div className="footer-links">
               <div className="footer-links-column">
