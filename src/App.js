@@ -22,7 +22,12 @@ function App() {
     
 
     try {
-      const response = await fetch(`${apiURL}/api/search?product=${encodeURIComponent(searchQuery)}`);
+      const response = await fetch(`${apiURL}/api/search?product=${encodeURIComponent(searchQuery)}`,{
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json"
+        }
+      });
       
       if (!response.ok) {
         throw new Error('Failed to fetch products');
@@ -87,7 +92,7 @@ function App() {
           
           {error && (
             <div className="error">
-              <p>Oops! {error}</p>
+              <p>Oops! Error 404: This deal must have been too good to exist!</p>
               <p>Please try again later.</p>
             </div>
           )}
@@ -141,9 +146,9 @@ function App() {
                 </svg>
               </div>
               <h2>Start saving with PocketGuardian</h2>
-              <p>Search for any product to find the best deals across multiple stores</p>
+              <p>Hunt down the best deals on any product across multiple stores!</p>
               <div className="popular-searches">
-                <p>Popular searches:</p>
+                <p>Trending now:</p>
                 <div className="popular-tags">
                   <button onClick={() => {setSearchQuery('laptop'); handleSearch(new Event('submit'))}}>Laptops</button>
                   <button onClick={() => {setSearchQuery('smartphone'); handleSearch(new Event('submit'))}}>Smartphones</button>
